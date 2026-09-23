@@ -4,12 +4,20 @@
 <head>
 	<title>Phinneas Stone</title>
     <style>
-        body {
-            background-color: #005500;
-            color: #F5D76E;
-            font-size: 18pt;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        html, body {
+            height: 100%;
             margin: 0;
+        }
+
+        body {
+            background-image: url("images/leaves-background.png");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #1F3B4D;
+            font-size: 18pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -25,45 +33,18 @@
 			display: inline-block;
 			margin-top: 20px;
 			padding: 30px 50px;
-			background-color: rgba(0, 0, 0, 0.18);
-			border: 1px solid rgba(245, 215, 110, 0.35);
+			background-color: rgba(255, 255, 255, 0.55);
+			border: 1px solid rgba(31, 59, 77, 0.25);
 			border-radius: 10px;
-			box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 4px 22px rgba(31, 59, 77, 0.18);
+			backdrop-filter: blur(6px);
+			-webkit-backdrop-filter: blur(6px);
 			line-height: 1.6;
-		}
-
-		.ornament {
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			width: 48px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 22pt;
-			letter-spacing: 6px;
-			color: rgba(245, 215, 110, 0.45);
-			writing-mode: vertical-rl;
-			text-orientation: upright;
-			user-select: none;
-			pointer-events: none;
-			overflow: hidden;
-		}
-
-		.ornament.left {
-			left: 14px;
-		}
-
-		.ornament.right {
-			right: 14px;
 		}
     </style>
 </head>
 
 <body>
-
-	<div class="ornament left">✦ ❈ ✦ ❈ ✦ ❈ ✦ ❈ ✦ ❈ ✦ ❈ ✦</div>
-	<div class="ornament right">✦ ❈ ✦ ❈ ✦ ❈ ✦ ❈ ✦ ❈ ✦ ❈ ✦</div>
 
 	<center>
         <img src="images/Seagull_Raven.png" class="logo">
