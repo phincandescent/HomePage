@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Phinneas Stone</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         html, body {
             height: 100%;
@@ -15,9 +16,6 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            color: #1F3B4D;
-            font-size: 18pt;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -30,6 +28,9 @@
 		}
 
 		.panel {
+            color: #1F3B4D;
+            font-size: 18pt;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 			display: inline-block;
 			margin-top: 20px;
 			padding: 30px 50px;
@@ -40,6 +41,25 @@
 			backdrop-filter: blur(6px);
 			-webkit-backdrop-filter: blur(6px);
 			line-height: 1.6;
+		}
+
+		@media (max-width: 700px) {
+			body {
+				background-attachment: scroll;
+			}
+
+			img.logo {
+				width: 55vw;
+				height: 55vw;
+				max-width: 320px;
+				max-height: 320px;
+			}
+
+			.panel {
+				font-size: 24pt;
+				padding: 25px 25px;
+				margin: 17px;
+			}
 		}
     </style>
 </head>
