@@ -11,7 +11,7 @@
         }
 
         body {
-            background-image: url("images/leaves-background.png");
+            background-image: url("images/background/leaves-background.desktop.png");
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -34,7 +34,8 @@
 			display: inline-block;
 			margin-top: 20px;
 			padding: 30px 50px;
-			background-color: rgba(255, 255, 255, 0.55);
+			/* background-color: rgba(255, 255, 255, 0.55); */
+		    background-color: rgb(240, 248, 255, 0.275); /* aliceblue */
 			border: 1px solid rgba(31, 59, 77, 0.25);
 			border-radius: 10px;
 			box-shadow: 0 4px 22px rgba(31, 59, 77, 0.18);
@@ -45,6 +46,7 @@
 
 		@media (max-width: 700px) {
 			body {
+				background-image: url("images/background/leaves-background.phone.jpg");
 				background-attachment: scroll;
 			}
 
@@ -63,11 +65,18 @@
 		}
 
 		.social-links {
-		  display: flex;
+		  display: inline-flex;
 		  gap: 16px;
 		  justify-content: center;
 		  align-items: center;
-		  padding: 20px 0;
+		  margin-top: 20px;
+		  padding: 20px;
+		}
+
+		.social-links.panel {
+		  /* background-color: rgba(255, 255, 255, 0.275); */
+		  background-color: rgb(240, 248, 255, 0.275); /* aliceblue */
+		  border-color: rgba(31, 59, 77, 0.125);
 		}
 
 		.social-links img {
@@ -80,25 +89,6 @@
 		  transform: translateY(-2px);
 		  opacity: 0.8;
 		}
-
-<!--
-		.social-links {
-		  display: flex;
-		  gap: 16px;
-		  justify-content: center;
-		  padding: 20px 0;
-		}
-
-		.social-links a {
-		  color: #555;
-		  transition: color 0.2s ease, transform 0.2s ease;
-		}
-
-		.social-links a:hover {
-		  color: #1877f2; /* swap per-icon if you want brand colors */
-		  transform: translateY(-2px);
-		}
--->
 
     </style>
 </head>
@@ -114,8 +104,8 @@
             I me mine. I walk the line.<br>
             I am the walrus, goo goo g'joob.
         </div>
-
-		<div class="social-links">
+        <br>
+		<div class="social-links panel">
 		  <a title="Facebook" href="https://facebook.com/phincandescent" target="_blank" rel="noopener noreferrer">
 			<img src="images/social/facebook.round.png" alt="Facebook" width="32" height="32">
 		  </a>
