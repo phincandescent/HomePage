@@ -2,9 +2,20 @@
 
 <html>
 <head>
-	<title>Phinneas Stone</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phinneas Stone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
+        :root {
+            --color-primary-rgb: 31, 59, 77; /* #1F3B4D */
+            --color-text: rgb(var(--color-primary-rgb));
+            --color-panel-bg-original: rgba(255, 255, 255, 0.55);
+            --color-panel-bg-lightblue: rgb(160, 180, 200, 0.275);
+            --color-panel-bg-aliceblue: rgb(240, 248, 255, 0.275);
+            --color-panel-border: rgba(var(--color-primary-rgb), 0.25);
+            --color-panel-shadow: rgba(var(--color-primary-rgb), 0.18);
+            --color-social-border: rgba(var(--color-primary-rgb), 0.125);
+        }
+
         html, body {
             height: 100%;
             margin: 0;
@@ -22,82 +33,77 @@
             justify-content: center;
         }
 
-		img.logo {
-			height: 200px;
-			width: 200px;
-		}
+        img.logo {
+            height: 200px;
+            width: 200px;
+        }
 
-		.panel {
-            color: #1F3B4D;
+        .panel {
+            color: var(--color-text);
             font-size: 18pt;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-			display: inline-block;
-			margin-top: 20px;
-			padding: 30px 50px;
-			/* background-color: rgba(255, 255, 255, 0.55); */ /* original */
-		    /* background-color: rgb(240, 248, 255, 0.275); */ /* aliceblue */
-			background-color: rgb(160, 180, 200, 0.275);       /* light blue */
-			border: 1px solid rgba(31, 59, 77, 0.25);
-			border-radius: 10px;
-			box-shadow: 0 4px 22px rgba(31, 59, 77, 0.18);
-			backdrop-filter: blur(6px);
-			-webkit-backdrop-filter: blur(6px);
-			line-height: 1.6;
-		}
+            display: inline-block;
+            margin-top: 20px;
+            padding: 30px 50px;
+            background-color: var(--color-panel-bg-aliceblue);
+            border: 1px solid var(--color-panel-border);
+            border-radius: 10px;
+            box-shadow: 0 4px 22px var(--color-panel-shadow);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            line-height: 1.6;
+        }
 
-		@media (max-width: 700px) {
-			body {
-				background-image: url("images/background/leaves-background.phone.jpg");
-				background-attachment: scroll;
-			}
+        @media (max-width: 700px) {
+            body {
+                background-image: url("images/background/leaves-background.phone.jpg");
+                background-attachment: scroll;
+            }
 
-			img.logo {
-				width: 55vw;
-				height: 55vw;
-				max-width: 320px;
-				max-height: 320px;
-			}
+            img.logo {
+                width: 55vw;
+                height: 55vw;
+                max-width: 320px;
+                max-height: 320px;
+            }
 
-			.panel {
-				font-size: 11pt;
-				padding: 25px 15px;
-				margin: 17px;
-			}
-		}
+            .panel {
+                font-size: 11pt;
+                padding: 25px 15px;
+                margin: 17px;
+            }
+        }
 
-		.social-links {
-		  display: inline-flex;
-		  gap: 16px;
-		  justify-content: center;
-		  align-items: center;
-		  margin-top: 20px;
-		  padding: 20px;
-		}
+        .social-links {
+            display: inline-flex;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
 
-		.social-links.panel {
-		  /* background-color: rgba(255, 255, 255, 0.55); */ /* original */
-		  /* background-color: rgb(240, 248, 255, 0.275); */ /* aliceblue */
-		  background-color: rgb(160, 180, 200, 0.275);       /* light blue */
-		  border-color: rgba(31, 59, 77, 0.125);
-		}
+            .social-links.panel {
+                background-color: var(--color-panel-bg-aliceblue);
+                border-color: var(--color-social-border);
+            }
 
-		.social-links img {
-		  width: 32px;
-		  height: 32px;
-		  transition: transform 0.2s ease, opacity 0.2s ease;
-		}
+            .social-links img {
+                width: 32px;
+                height: 32px;
+                transition: transform 0.2s ease, opacity 0.2s ease;
+            }
 
-		.social-links a:hover img {
-		  transform: translateY(-2px);
-		  opacity: 0.8;
-		}
-
+            .social-links a:hover img {
+                transform: translateY(-2px);
+                opacity: 0.8;
+            }
     </style>
 </head>
 
 <body>
 
-	<center>
+    <center>
         <img src="images/Seagull_Raven.png" class="logo">
         <br>
         <div class="panel">
@@ -107,17 +113,17 @@
             I am the walrus, goo goo g'joob.
         </div>
         <br>
-		<div class="social-links panel">
-		  <a title="Facebook" href="https://facebook.com/phincandescent" target="_blank" rel="noopener noreferrer">
-			<img src="images/social/round/facebook.png" alt="Facebook" width="32" height="32">
-		  </a>
-		  <a title="Instagram" href="https://instagram.com/phincandescent" target="_blank" rel="noopener noreferrer">
-			<img src="images/social/round/instagram.png" alt="Instagram" width="32" height="32">
-		  </a>
-		  <a title="LinkedIn" href="https://linkedin.com/in/phinneas" target="_blank" rel="noopener noreferrer">
-			<img src="images/social/round/linkedin.png" alt="LinkedIn" width="32" height="32">
-		  </a>
-		</div>
+        <div class="social-links panel">
+            <a title="Facebook" href="https://facebook.com/phincandescent" target="_blank" rel="noopener noreferrer">
+                <img src="images/social/round/facebook.png" alt="Facebook" width="32" height="32">
+            </a>
+            <a title="Instagram" href="https://instagram.com/phincandescent" target="_blank" rel="noopener noreferrer">
+                <img src="images/social/round/instagram.png" alt="Instagram" width="32" height="32">
+            </a>
+            <a title="LinkedIn" href="https://linkedin.com/in/phinneas" target="_blank" rel="noopener noreferrer">
+                <img src="images/social/round/linkedin.png" alt="LinkedIn" width="32" height="32">
+            </a>
+        </div>
     </center>
 
 </body>
